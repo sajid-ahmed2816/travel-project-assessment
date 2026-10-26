@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Morroway Travel Co.
 
-First, run the development server:
+**Every Journey, Made Simpler.**
+
+A modern, responsive travel agency landing page designed to present essential travel services through a clean UI, immersive destination imagery, and smooth scroll-based animations.
+
+## 🔗 Links
+
+- **Live Demo:** [View Website](https://travel-project-assessment.vercel.app/)
+- **GitHub Repository:** [View Source Code](https://github.com/sajid-ahmed2816/travel-project-assessment)
+
+## ✨ Features
+
+- Responsive layout for mobile, tablet, and desktop
+- Hero section with animated text and destination imagery
+- Four travel service cards:
+  - Visa Assistance
+  - Flight Tickets
+  - Hotel Booking
+  - Car Rental
+- Why Choose Us section
+- Destination call-to-action banner
+- Interactive FAQ accordion
+- Masonry-style travel inspiration gallery
+- Responsive navigation and branded footer
+- Smooth anchor navigation
+- GSAP entrance animations and ScrollTrigger effects
+- Reduced-motion support for GSAP animations
+- SEO metadata using the Next.js Metadata API
+
+## 🛠️ Tech Stack
+
+- Next.js — App Router
+- React
+- TypeScript
+- Tailwind CSS v4
+- GSAP
+- @gsap/react
+- GSAP ScrollTrigger
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sajid-ahmed2816/travel-project-assessment.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd assessment_project
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📜 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run start` | Start the production server |
+| `npm run lint` | Run ESLint |
 
-## Learn More
+## 🎬 Animations
 
-To learn more about Next.js, take a look at the following resources:
+GSAP and ScrollTrigger are used for section reveals, staggered card animations, image reveals, and background parallax effects.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The design combines GSAP animations with CSS hover transitions while respecting the user's reduced-motion preference for GSAP effects.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📱 Responsive Design
 
-## Deploy on Vercel
+The layout adapts to different screen sizes using Tailwind CSS responsive utilities. Navigation, service cards, content sections, and the destination gallery are designed to work across mobile and desktop viewports.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🖼️ Images
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Destination imagery is loaded from Unsplash URLs. Replace image URLs with appropriate licensed assets when adapting the project for production.
+
+## 🚀 Deployment
+
+The project is deployed on Vercel and can be updated by pushing changes to the connected GitHub repository.
+
+---
+
+Built as a frontend development assessment project.
