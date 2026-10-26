@@ -17,7 +17,7 @@ export default function PlanTripBanner() {
       return;
     };
 
-    // Reveal the banner content when it enters the viewport
+    // Banner content: replay in both scroll directions
     gsap.fromTo(
       "[data-cta-reveal]",
       {
@@ -32,13 +32,14 @@ export default function PlanTripBanner() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".cta-panel",
-          start: "top 75%",
-          once: true,
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
         },
       }
     );
 
-    // Subtle background parallax while scrolling
+    // Background parallax: controlled directly by scrolling
     gsap.fromTo(
       ".cta-background",
       {

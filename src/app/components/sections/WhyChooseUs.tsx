@@ -36,8 +36,9 @@ export default function WhyChooseUs() {
   useGSAP(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return;
-    }
+    };
 
+    // Image reveal
     gsap.fromTo(
       ".why-image",
       {
@@ -49,12 +50,14 @@ export default function WhyChooseUs() {
         ease: "power3.inOut",
         scrollTrigger: {
           trigger: ".why-visual",
-          start: "top 78%",
-          once: true,
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
         },
       }
     );
 
+    // Heading and description
     gsap.fromTo(
       "[data-why-heading]",
       {
@@ -69,16 +72,18 @@ export default function WhyChooseUs() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".why-copy",
-          start: "top 80%",
-          once: true,
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
         },
       }
     );
 
+    // Benefit items enter from the left
     gsap.fromTo(
       "[data-why-item]",
       {
-        x: 35,
+        x: -60,
         autoAlpha: 0,
       },
       {
@@ -89,13 +94,15 @@ export default function WhyChooseUs() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".why-benefits",
-          start: "top 85%",
-          once: true,
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
         },
       }
     );
-  }, { scope: sectionRef }
-  );
+  }, {
+    scope: sectionRef
+  });
 
   return (
     <section

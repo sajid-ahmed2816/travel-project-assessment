@@ -119,8 +119,9 @@ export default function Services() {
         ease: "power4.out",
         scrollTrigger: {
           trigger: grid,
-          start: "top 85%",
-          once: false,
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "restart reverse restart reverse",
         },
       }
     );

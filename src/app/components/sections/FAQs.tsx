@@ -59,8 +59,9 @@ export default function FAQs() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".faq-intro",
-          start: "top 82%",
-          once: true,
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
         },
       }
     );
@@ -79,8 +80,9 @@ export default function FAQs() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".faq-list",
-          start: "top 82%",
-          once: true,
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
         },
       }
     );

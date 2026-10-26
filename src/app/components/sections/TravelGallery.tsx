@@ -82,7 +82,7 @@ export default function TravelGallery() {
   useGSAP(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return;
-    }
+    };
 
     gsap.fromTo(
       "[data-gallery-card]",
@@ -100,8 +100,9 @@ export default function TravelGallery() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".gallery-grid",
-          start: "top 82%",
-          once: true,
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
         },
       }
     );
@@ -120,14 +121,16 @@ export default function TravelGallery() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".gallery-intro",
-          start: "top 85%",
-          once: true,
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
         },
       }
     );
   }, {
     scope: sectionRef
-  });
+  }
+  );
 
   return (
     <section
